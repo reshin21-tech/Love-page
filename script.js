@@ -2,6 +2,18 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 const heartsContainer = document.querySelector(".hearts");
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicBtn.innerText = "🔊";
+    } else {
+        music.pause();
+        musicBtn.innerText = "🔇";
+    }
+});
 
 yesBtn.addEventListener("click", () => {
     message.innerText = "Yay!! ❤️ I knew it!";
@@ -32,3 +44,4 @@ function createHeart() {
 }
 
 setInterval(createHeart, 400);
+
