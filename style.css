@@ -17,10 +17,23 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.dimoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .dimoo img {
-    width: 150px;
-    margin-bottom: 15px;
-    animation: floatDimoo 3s ease-in-out infinite;
+    width: 120px;
+    max-width: 35vw;
+    height: auto;
 }
 
 @keyframes floatDimoo {
@@ -105,5 +118,6 @@ h2 {
         opacity: 0;
     }
 }
+
 
 
