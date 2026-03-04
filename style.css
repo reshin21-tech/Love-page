@@ -17,6 +17,18 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+.dimoo img {
+    width: 150px;
+    margin-bottom: 15px;
+    animation: floatDimoo 3s ease-in-out infinite;
+}
+
+@keyframes floatDimoo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
 .container {
     text-align: center;
     background: white;
@@ -93,4 +105,5 @@ h2 {
         opacity: 0;
     }
 }
+
 
